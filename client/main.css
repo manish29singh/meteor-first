@@ -1,0 +1,41 @@
+body {
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+[name=todoItem]{
+    border:none;
+    font-family: "Times New Roman";
+    font-size: 100%;
+    padding:0.15em;
+}
+
+[name=todoItem]:hover{
+    background-color: #d3d3d3;
+    cursor:pointer;
+}
+
+[name=todoItem]:focus{
+    background-color: #f9f9f9;
+    cursor:default;
+    outline:none;
+}
+
+.checked{
+    background-color:#f0f0f0;
+    color:#666;
+}
+
+.checked [name=todoItem]{
+    text-decoration: line-through;
+}
+
+.checked [name=todoItem],
+.checked [name=todoItem]:hover,
+.checked [name=todoItem]:focus{
+    background-color:#f0f0f0;
+}
+
+input.error{
+	background-color: rgb(255, 231, 231);
+}
